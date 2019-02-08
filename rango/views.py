@@ -128,7 +128,7 @@ def user_login(request):
                         else:
                                 return HttpResponse("Your Rango account is disabled")
                 else:
-                        print ("Invlid login details: {0}, {1}".format(username, password))
+                        print ("Invalid login details: {0}, {1}".format(username, password))
                         return HttpResponse("Invalid login details supplied.")
         else:
                 return render(request,'rango/login.html', {})
